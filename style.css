@@ -1,0 +1,85 @@
+/* reseting pre-applied css */
+
+body { background-image:url("bg-gif.gif");
+background-position: center;
+background-repeat: no-repeat;
+ background-size: 100%;
+}
+
+button:hover {
+  background-color: #FF6363;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+/* first page container ----I have used  flex for centering all items*/
+
+.firstpage-container {
+    /* border: 2px solid red; */
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* below code I have used for alignment puspose only */
+
+
+/*
+.f1 {
+    border: 2px solid blue;
+    margin: 12px auto;
+} */
+
+
+/* college name styling below */
+
+#collegeName {
+  color: #EDF6E5;
+    font-family: 'Bree Serif', serif;
+    font-size: 2.7rem;
+}
+
+
+/* college tagline styling below */
+
+#tag {
+    color: #EDF6E5;
+    font-size: 1.4rem;
+    font-family: 'Akaya Telivigala', cursive;
+}
+
+
+/* button margin below */
+
+#std-button {
+    margin: 35px auto;
+}
+
+
+/* button styling */
+
+
+.btn {
+    display: block;
+    width: 200px;
+    height: 44px;
+    border-radius: 16px;
+    font-size: 18px;
+    font-family: 'Bree Serif', serif;
+    background-color: #EDF6E5;
+}
+
+
+/* centering all texts to center */
+
+.center {
+    text-align: center;
+}
