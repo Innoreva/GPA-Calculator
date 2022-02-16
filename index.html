@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GPA calculator-first page</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="style.css">
 
     <!-- below  code is of external fonts link stylesheets imported from google fonts -->
 
@@ -31,9 +31,56 @@
 
         </div>
         <div class="f1" id="std-button">
-            <button class="btn">Enter Student Details</button>
+            <button class="btn">
+                Enter Student Details</button>
         </div>
     </div>
+    <section id="stdForm">
+        <form class="form" action="#">
+
+            <div class="item">
+                <label for="stdname">Name:</label>
+
+                <input type="text" id="stdname" required placeholder="  Enter Name">
+            </div>
+
+            <div class="item" id="reg">
+
+                <label for="regNo">Registration No:</label>
+
+
+                <input type="text" id="regNo" required placeholder="  Enter Registration No.">
+
+            </div>
+
+
+            <div class="item" id="sem">
+
+                <label for="semNo">Semester:</label>
+
+                <input type="number" id="semNo" required placeholder="  Enter Semester No">
+
+            </div>
+
+            <div class="item">
+
+                <input type="submit" id="form-submit" value="Submit" data-inline="true">
+
+            </div>
+
+            <div class="item">
+                <input type="button" id="clear-form" value="Clear Form" data-inline="true">
+            </div>
+
+
+
+
+
+
+
+        </form>
+
+    </section>
 </body>
 
 </html>
