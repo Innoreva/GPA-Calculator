@@ -1,10 +1,17 @@
 /* reseting pre-applied css */
 
+<<<<<<< HEAD
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css");
 body {
     text-align: center;
     /* background-image: -webkit-linear-gradient(65deg, #A683E3 50%, #E4E9FD 50%); */
     font-family: 'Bree Serif', serif;
+=======
+body { background-image:url("bg-gif.gif");
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+>>>>>>> origin
 }
 
 a {
@@ -80,6 +87,7 @@ footer {
     text-align: center;
 }
 
+<<<<<<< HEAD
 .social {
     margin: 15px;
 }
@@ -106,3 +114,78 @@ footer {
         margin: 15px;
     }
 }
+=======
+/* std form-- section  */
+section{
+    /* border: 2px solid red; */
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+   align-items: center;
+}
+
+/* designing form */
+form{
+    /* border: 2px solid blue; */
+    margin-top: 100px;
+    color : #EDF6E5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    width: 800px;
+  }
+
+  #form-submit:hover{
+     background-color: #FF6363;
+   }
+ #form-submit{
+   padding      : 5px;
+   font-family  : 'Bree Serif', serif;
+   border       : 2px solid #333;
+   border-radius: 5px;
+   margin-top: 20px;
+
+   background   : none;
+   cursor       : pointer;
+   transform    : rotate(-1.5deg);
+   background-color: #EDF6E5;
+   display: inline;
+}
+
+#clear-form:hover{
+   background-color: #FF6363;
+ }
+#clear-form {
+
+  padding      : 5px;
+  font-family  : 'Bree Serif', serif;
+  border       : 2px solid #333;
+  border-radius: 5px;
+  margin-top: 20px;
+  background   : none;
+  cursor       : pointer;
+  transform    : rotate(-1.5deg);
+  background-color: #EDF6E5;
+  display: inline;
+
+}
+
+label{
+            cursor: pointer;
+            display: inline-block;
+            padding: 3px 6px;
+            font-family: 'Akaya Telivigala', cursive;
+            font-size: 1.8rem;
+            text-align: left;
+            width: 200px;
+            vertical-align: top;
+        }
+
+input{
+
+  border-radius: 6px;
+}
+>>>>>>> origin
