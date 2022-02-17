@@ -1,159 +1,110 @@
 /* reseting pre-applied css */
 
-body { background-image:url("bg-gif.gif");
-background-position: center;
-background-repeat: no-repeat;
-background-size: cover;
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css");
+body {
+  text-align: center;
+  /* background: rgb(59,49,232); */
+/* background: linear-gradient(281deg, rgba(59,49,232,1) 0%, rgba(154,55,208,0.9953023445706407) 34%, rgba(0,212,255,1) 100%); */
+  /* background-image: -webkit-linear-gradient(60deg, #f3a0de 20%,rgb(235, 173, 103) 30%, #714add 60%); */
+  font-family: "Bree Serif", serif;
 }
 
-button:hover {
-  background-color: #FF6363;
+a {
+  text-decoration: none;
+  color: black;
 }
 
-* {
-    padding: 0;
-    margin: 0;
+h2 {
+  margin: 15px;
+  font-family: "Bree Serif", serif;
 }
 
-
-/* first page container ----I have used  flex for centering all items*/
+label {
+  font-family: "Akaya Telivigala", cursive;
+  font-size: 1.8rem;
+}
+/* Header Part Styling */
 
 .firstpage-container {
-    /* border: 2px solid red; */
-    height: 100vh;
-    width: 100vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-
-
-/* below code I have used for alignment puspose only */
-
-
-/*
-.f1 {
-    border: 2px solid blue;
-    margin: 12px auto;
-} */
-
-
-/* college name styling below */
 
 #collegeName {
-  color: #EDF6E5;
-    font-family: 'Bree Serif', serif;
-    font-size: 2.7rem;
+  font-family: "Bree Serif", serif;
+  font-size: 2.7rem;
 }
 
-
-/* college tagline styling below */
+.tagline {
+  margin: 20px;
+}
 
 #tag {
-    color: #EDF6E5;
-    font-size: 1.4rem;
-    font-family: 'Akaya Telivigala', cursive;
+  font-size: 1.4rem;
+  font-family: "Akaya Telivigala", cursive;
+}
+/* Form Styling */
+
+#stdForm {
+  margin: 80px;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
 }
 
-
-/* button margin below */
-
-#std-button {
-    margin: 35px auto;
+.but {
+  text-decoration: none;
+  margin: 10px;
+  color: #edf6e5;
 }
 
+.but:hover {
+  color: #fff;
+}
+/* Footer part */
 
-/* button styling */
-
-
-.btn {
-    display: block;
-    width: 200px;
-    height: 44px;
-    border-radius: 16px;
-    font-size: 18px;
-    font-family: 'Bree Serif', serif;
-    background-color: #EDF6E5;
+footer {
+  bottom: 0;
+  margin: 80px;
 }
 
+.box {
+  margin: 20px;
+  text-align: left;
+}
 
-/* centering all texts to center */
+.inn {
+  text-align: center;
+}
 
-.center {
+.social {
+  margin: 15px;
+}
+.git:hover {
+  color: black;
+}
+/* Responsive */
+
+@media only screen and (max-width: 600px) {
+  .box {
     text-align: center;
-}
-
-/* std form-- section  */
-section{
-    /* border: 2px solid red; */
-    height: 60vh;
-    display: flex;
-    flex-direction: column;
-    /* justify-content: center; */
-   align-items: center;
-}
-
-/* designing form */
-form{
-    /* border: 2px solid blue; */
-    margin-top: 100px;
-    color : #EDF6E5;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 400px;
-    width: 800px;
+    margin: 10px;
   }
-
-  #form-submit:hover{
-     background-color: #FF6363;
-   }
- #form-submit{
-   padding      : 5px;
-   font-family  : 'Bree Serif', serif;
-   border       : 2px solid #333;
-   border-radius: 5px;
-   margin-top: 20px;
-
-   background   : none;
-   cursor       : pointer;
-   transform    : rotate(-1.5deg);
-   background-color: #EDF6E5;
-   display: inline;
-}
-
-#clear-form:hover{
-   background-color: #FF6363;
- }
-#clear-form {
-
-  padding      : 5px;
-  font-family  : 'Bree Serif', serif;
-  border       : 2px solid #333;
-  border-radius: 5px;
-  margin-top: 20px;
-  background   : none;
-  cursor       : pointer;
-  transform    : rotate(-1.5deg);
-  background-color: #EDF6E5;
-  display: inline;
-
-}
-
-label{
-            cursor: pointer;
-            display: inline-block;
-            padding: 3px 6px;
-            font-family: 'Akaya Telivigala', cursive;
-            font-size: 1.8rem;
-            text-align: left;
-            width: 200px;
-            vertical-align: top;
-        }
-
-input{
-
-  border-radius: 6px;
+  #collegeName {
+    font-size: 2rem;
+  }
+  #tag {
+    font-size: 1rem;
+    font-family: "Akaya Telivigala", cursive;
+  }
+  footer {
+    margin: 20px;
+  }
+  #stdForm {
+    margin: 15px;
+  }
 }

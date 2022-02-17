@@ -4,8 +4,8 @@ GPA Calculator Project Using JavaScript. It takes at least 6 subject’s  grade 
 This Project is assigned to sub-group C.
 
 ## Mentor 
-Ayush Kumar Chaudhary
-Anmol Kesharwani
+1. Ayush Kumar Chaudhary
+2. Anmol Kesharwani
 
 ## Contributors
 1. Akhilesh Kumar Mishra
