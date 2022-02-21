@@ -47,7 +47,7 @@ document.getElementById("submit").addEventListener("click", () => {
     if (creditsarray[i].value != "Credit Point") {
      if (
         Number(marksarray[i].value) <= 100 &&
-        Number(marksarray[i].value) >= 0
+        Number(marksarray[i].value) > 0
       ) {
         score =
           score +
