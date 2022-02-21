@@ -51,7 +51,7 @@ document.getElementById("submit").addEventListener("click", () => {
       ) {
         score =
           score +
-          (Number(marksarray[i].value) / 10 + 1) *
+          (Math.floor((Number(marksarray[i].value) - 1) / 10) + 1) *
             Number(creditsarray[i].value);
         totalCredits += Number(creditsarray[i].value);
       } else f = 1;
