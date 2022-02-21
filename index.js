@@ -43,9 +43,9 @@ document.getElementById("submit").addEventListener("click", () => {
   //stores the sum of credits entered.
   let totalCredits = 0;
   
-  for (let i = 0; i < marksarray.length; i++) {
+ for (let i = 0; i < marksarray.length; i++) {
     if (creditsarray[i].value != "Credit Point") {
-     if (
+      if (
         Number(marksarray[i].value) <= 100 &&
         Number(marksarray[i].value) > 0
       ) {
