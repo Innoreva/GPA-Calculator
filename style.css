@@ -4,12 +4,27 @@
 body {
   text-align: center;
   /* background: rgb(59,49,232); */
-/* background: linear-gradient(281deg, rgba(59,49,232,1) 0%, rgba(154,55,208,0.9953023445706407) 34%, rgba(0,212,255,1) 100%); */
-/* background-image: linear-gradient(to right bottom, #654bee, #007eff, #00a0ff, #00bbf2, #00d0dd, #15d3dd, #23d6dc, #2dd9dc, #00ccee, #00bdfc, #00aaff, #5f93fb); */
-background-image: linear-gradient(to left top, #654bee, #007eff, #00a0ff, #00bbf2, #00d0dd, #15d3dd, #23d6dc, #2dd9dc, #00ccee, #00bdfc, #00aaff, #5f93fb);
+  /* background: linear-gradient(281deg, rgba(59,49,232,1) 0%, rgba(154,55,208,0.9953023445706407) 34%, rgba(0,212,255,1) 100%); */
+  /* background-image: linear-gradient(to right bottom, #654bee, #007eff, #00a0ff, #00bbf2, #00d0dd, #15d3dd, #23d6dc, #2dd9dc, #00ccee, #00bdfc, #00aaff, #5f93fb); */
+  background-image: linear-gradient(
+    to left top,
+    #654bee,
+    #007eff,
+    #00a0ff,
+    #00bbf2,
+    #00d0dd,
+    #15d3dd,
+    #23d6dc,
+    #2dd9dc,
+    #00ccee,
+    #00bdfc,
+    #00aaff,
+    #5f93fb
+  );
 
   /* background-image: -webkit-linear-gradient(60deg, #f3a0de 20%,rgb(235, 173, 103) 30%, #714add 60%); */
   font-family: "Bree Serif", serif;
+  background-attachment: fixed;
 }
 
 a {
@@ -42,6 +57,15 @@ label {
   font-size: 2.7rem;
 }
 
+#name {
+  position: absolute;
+  top: 170px;
+}
+
+#briefing {
+  position: absolute;
+  top: 300px;
+}
 .tagline {
   margin: 20px;
 }
@@ -52,6 +76,11 @@ label {
 }
 /* Form Styling */
 
+.content {
+  display: none;
+  position: absolute;
+  top: 50px;
+}
 #stdForm {
   margin: 80px;
   border-radius: 10px;
@@ -72,7 +101,7 @@ label {
 
 footer {
   bottom: 0;
-  margin: 80px;
+  margin: 60px;
 }
 
 .box {
@@ -100,12 +129,28 @@ footer {
   #collegeName {
     font-size: 2rem;
   }
+
+  #name {
+    position: absolute;
+    top: 170px;
+  }
+
+  #briefing {
+    position: absolute;
+    top: 300px;
+  }
+  .content {
+    display: none;
+    position: absolute;
+    top: 170px;
+  }
+
   #tag {
     font-size: 1rem;
     font-family: "Akaya Telivigala", cursive;
   }
   footer {
-    margin: 20px;
+    margin: 75px;
   }
   #stdForm {
     margin: 15px;
