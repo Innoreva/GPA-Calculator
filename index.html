@@ -30,8 +30,8 @@
         <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-<link rel="manifest" href="site.webmanifest">
-<link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+<link rel="manifest" href="favicon-gpa/site.webmanifest">
+<link rel="mask-icon" href="favicon-gpa/safari-pinned-tab.svg" color="#5bbad5">
 <meta name="msapplication-TileColor" content="#da532c">
 <meta name="theme-color" content="#ffffff">
 
@@ -43,6 +43,7 @@
         <div class="f1" id="name">
             <h1 id="collegeName"> Innovative Institute of Web Technologies(IIWT)</h1>
         </div>
+        <div id="briefing">
         <div class="f1" id="tag">
             <p class="tagline center">A great starting point towards a better future</p>
             <h2 class="tagline">Presenting to you a Grade Point Average Calculator.</h2>
@@ -50,10 +51,12 @@
                 the marks enter by the student.</p>
         </div>
         <div class="f1" id="std-button">
-            <button class="btn btn-primary but"><a class="but" href="#stdForm">Enter Student Details</a>
+            <button class="btn btn-primary but"><!--<a class="but" href="#stdForm">-->Enter Student Details<!--</a>-->
             </button>
         </div>
+        </div>
     </div>
+    <div class="content my-5">
     <section id="stdForm">
         <h2>Enter Your Details</h1>
             <form class="form" action="#">
@@ -61,18 +64,18 @@
                 <div class="row g-3">
                     <div class="col-md-6 col-sm-12">
                         <input type="text" class="form-control" placeholder="First Name" aria-label="First name"
-                            autocomplete="nofill" required>
+                            autocomplete="nofill" required id="fname">
                     </div>
                     <div class="col-md-6 col-sm-12">
                         <input type="text" class="form-control" placeholder="Last Name" aria-label="Last name"
-                            autocomplete="nofill" required>
+                            autocomplete="nofill" required id="lname">
                     </div>
                     <div class="col-md-6 col-sm-12">
                         <input type="text" class="form-control" placeholder="Registration Number"
-                            aria-label="Registration Number" autocomplete="nofill" required>
+                            aria-label="Registration Number" autocomplete="nofill" required id="reg">
                     </div>
                     <div class="col-md-6 col-sm-12">
-                        <select id="inputSemester" class="form-select" required>
+                        <select id="inputSemester" class="form-select"  required>
                             <option selected>Choose Semester</option>
                             <option>1</option>
                             <option>2</option>
@@ -91,11 +94,11 @@
                             <input type="text" class="form-control" placeholder="Subject Name" required>
                         </div>
                         <div class="col-md-3 col-sm-6">
-                            <input type="number" class="form-control" placeholder="Marks Obtained" required min="1"
+                            <input type="number" class="form-control marks" placeholder="Marks Obtained" required min="1"
                                 max="100">
                         </div>
                         <div class="col-md-3 col-sm-6">
-                            <select id="inputCreditPoint" class="form-select" required>
+                            <select id="inputCreditPoint" class="form-select credit" required>
                                 <option selected>Credit Point </option>
                                 <option>1</option>
                                 <option>2</option>
@@ -103,6 +106,10 @@
                                 <option>4</option>
                                 <option>5</option>
                                 <option>6</option>
+                                <option>7</option>
+                                <option>8</option>
+                                <option>9</option>
+                                <option>10</option>
                             </select>
                         </div>
                     </div>
@@ -111,11 +118,11 @@
                             <input type="text" class="form-control" placeholder="Subject Name" required>
                         </div>
                         <div class="col-md-3 col-sm-6">
-                            <input type="number" class="form-control" placeholder="Marks Obtained" required min="1"
+                            <input type="number" class="form-control marks" placeholder="Marks Obtained" required min="1"
                                 max="100">
                         </div>
                         <div class="col-md-3 col-sm-6">
-                            <select id="inputCreditPoint" class="form-select" required>
+                            <select id="inputCreditPoint" class="form-select credit" required>
                                 <option selected>Credit Point </option>
                                 <option>1</option>
                                 <option>2</option>
@@ -123,6 +130,10 @@
                                 <option>4</option>
                                 <option>5</option>
                                 <option>6</option>
+                                <option>7</option>
+                                <option>8</option>
+                                <option>9</option>
+                                <option>10</option>
                             </select>
                         </div>
                     </div>
@@ -131,11 +142,11 @@
                             <input type="text" class="form-control" placeholder="Subject Name" required>
                         </div>
                         <div class="col-md-3 col-sm-6">
-                            <input type="number" class="form-control" placeholder="Marks Obtained" required min="1"
+                            <input type="number" class="form-control marks" placeholder="Marks Obtained" required min="1"
                                 max="100">
                         </div>
                         <div class="col-md-3 col-sm-6">
-                            <select id="inputCreditPoint" class="form-select" required>
+                            <select id="inputCreditPoint" class="form-select credit" required>
                                 <option selected>Credit Point </option>
                                 <option>1</option>
                                 <option>2</option>
@@ -143,6 +154,10 @@
                                 <option>4</option>
                                 <option>5</option>
                                 <option>6</option>
+                                <option>7</option>
+                                <option>8</option>
+                                <option>9</option>
+                                <option>10</option>
                             </select>
                         </div>
                     </div>
@@ -151,11 +166,11 @@
                             <input type="text " class="form-control" placeholder="Subject Name" required>
                         </div>
                         <div class="col-md-3 col-sm-6">
-                            <input type="number" class="form-control" placeholder="Marks Obtained" required min="1"
+                            <input type="number" class="form-control marks" placeholder="Marks Obtained" required min="1"
                                 max="100">
                         </div>
                         <div class="col-md-3 col-sm-6">
-                            <select id="inputCreditPoint" class="form-select" required>
+                            <select id="inputCreditPoint" class="form-select credit" required>
                                 <option selected>Credit Point </option>
                                 <option>1</option>
                                 <option>2</option>
@@ -163,6 +178,10 @@
                                 <option>4</option>
                                 <option>5</option>
                                 <option>6</option>
+                                <option>7</option>
+                                <option>8</option>
+                                <option>9</option>
+                                <option>10</option>
                             </select>
                         </div>
                     </div>
@@ -171,11 +190,11 @@
                             <input type="text " class="form-control" placeholder="Subject Name" required>
                         </div>
                         <div class="col-md-3 col-sm-6">
-                            <input type="number" class="form-control" placeholder="Marks Obtained" required min="1"
+                            <input type="number" class="form-control marks" placeholder="Marks Obtained" required min="1"
                                 max="100">
                         </div>
                         <div class="col-md-3 col-sm-6">
-                            <select id="inputCreditPoint" class="form-select" required>
+                            <select id="inputCreditPoint" class="form-select credit" required>
                                 <option selected>Credit Point </option>
                                 <option>1</option>
                                 <option>2</option>
@@ -183,6 +202,10 @@
                                 <option>4</option>
                                 <option>5</option>
                                 <option>6</option>
+                                <option>7</option>
+                                <option>8</option>
+                                <option>9</option>
+                                <option>10</option>
                             </select>
                         </div>
                     </div>
@@ -191,11 +214,11 @@
                             <input type="text" class="form-control" placeholder="Subject Name" required>
                         </div>
                         <div class="col-md-3 col-sm-6">
-                            <input type="number" class="form-control" placeholder="Marks Obtained" required min="1"
+                            <input type="number" class="form-control marks" placeholder="Marks Obtained" required min="1"
                                 max="100">
                         </div>
                         <div class="col-md-3 col-sm-6">
-                            <select id="inputCreditPoint" class="form-select" required>
+                            <select id="inputCreditPoint" class="form-select credit" required>
                                 <option selected>Credit Point </option>
                                 <option>1</option>
                                 <option>2</option>
@@ -203,6 +226,10 @@
                                 <option>4</option>
                                 <option>5</option>
                                 <option>6</option>
+                                <option>7</option>
+                                <option>8</option>
+                                <option>9</option>
+                                <option>10</option>
                             </select>
                         </div>
                     </div>
@@ -211,11 +238,11 @@
                             <input type="text" class="form-control" placeholder="Subject Name" required>
                         </div>
                         <div class="col-md-3 col-sm-6">
-                            <input type="number" class="form-control" placeholder="Marks Obtained" required min="1"
+                            <input type="number" class="form-control marks" placeholder="Marks Obtained" required min="1"
                                 max="100">
                         </div>
                         <div class="col-md-3 col-sm-6">
-                            <select id="inputCreditPoint" class="form-select" required>
+                            <select id="inputCreditPoint" class="form-select credit" required>
                                 <option selected>Credit Point </option>
                                 <option>1</option>
                                 <option>2</option>
@@ -223,6 +250,10 @@
                                 <option>4</option>
                                 <option>5</option>
                                 <option>6</option>
+                                <option>7</option>
+                                <option>8</option>
+                                <option>9</option>
+                                <option>10</option>
                             </select>
                         </div>
                     </div>
@@ -231,11 +262,11 @@
                             <input type="text" class="form-control" placeholder="Subject Name" required>
                         </div>
                         <div class="col-md-3 col-sm-6">
-                            <input type="number" class="form-control" placeholder="Marks Obtained" required min="1"
+                            <input type="number" class="form-control marks" placeholder="Marks Obtained" required min="1"
                                 max="100">
                         </div>
                         <div class="col-md-3 col-sm-6">
-                            <select id="inputCreditPoint" class="form-select" required>
+                            <select id="inputCreditPoint" class="form-select credit" required>
                                 <option selected>Credit Point </option>
                                 <option>1</option>
                                 <option>2</option>
@@ -243,25 +274,29 @@
                                 <option>4</option>
                                 <option>5</option>
                                 <option>6</option>
+                                <option>7</option>
+                                <option>8</option>
+                                <option>9</option>
+                                <option>10</option>
                             </select>
                         </div>
                     </div>
 
                 </div>
                 <div class="item ">
-                    <button type="submit" class="btn but btn-primary"><a class="but"
+                    <button type="submit" class="btn but btn-primary" id="submit"><a class="but"
                             href="#GradePointResult">Submit</a></button>
 
                 </div>
             </form>
     </section>
     <section id="GradePointResult">
-        <div>
+        <div style="height: auto;">
             <!-- Add JavaScript and Alter this part innerHTML -->
-            <h2>Hii ! %Student Name% Your SGPA is %%. </h2>
-
+            <h2></h2>
+            <h3></h3>
         </div>
-
+        <br><br><br>
     </section>
 
     <footer>
@@ -308,6 +343,9 @@
             </div>
         </div>
     </footer>
+    </div>
+    
+    <script src="index.js"></script>
 </body>
 
 </html>
