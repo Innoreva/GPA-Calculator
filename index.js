@@ -31,6 +31,9 @@ document.getElementById("submit").addEventListener("click", () => {
   //A temporary variable to check if marks in any field is out of bound or not
   let f=0;
   
+  //A temporary variable to check if credit is selected or not
+  let g=0;
+  
   //contains all the marks entered.
   let marksarray = document.getElementsByClassName("marks");
   
@@ -52,6 +55,8 @@ document.getElementById("submit").addEventListener("click", () => {
             Number(creditsarray[i].value);
         totalCredits += Number(creditsarray[i].value);
       } else f = 1;
+    } else if (Number(marksarray[i].value) > 0) {
+      g = 1;
     }
   }
   
@@ -60,7 +65,7 @@ document.getElementById("submit").addEventListener("click", () => {
   result = score / totalCredits ? (score / totalCredits).toFixed(2) : 0;
   
   //final logic to print the output.
-  if (result != 0&&f==0) {
+  if (result != 0&&f==0&&g==0) {
     let suffix = "th";
     if (sem == 1) suffix = "st";
     else if (sem == 2) suffix = "nd";
@@ -72,8 +77,8 @@ document.getElementById("submit").addEventListener("click", () => {
     else if (sem === "Choose Semester") alert("Please select semester");
     else {
       let remarks = "Well Done!";
-      if (result < 4) remarks = "Try to improve your performance. Good luck!";
-      else if (result < 5) remarks = "Good performance. Keep improving!";
+      if (result < 6) remarks = "Try to improve your performance. Good luck!";
+      else if (result < 8) remarks = "Good performance. Keep improving!";
       document.querySelector(
         "#GradePointResult h2"
       ).textContent = `${fname} ${lname}, ${reg} has got ${result} GPA in ${sem}${suffix} semester`;
@@ -83,7 +88,13 @@ document.getElementById("submit").addEventListener("click", () => {
     document.querySelector("#GradePointResult h2").textContent = "";
     document.querySelector("#GradePointResult h3").textContent = "";
     alert(
-      "Marks entered in some subjects are beyond the range of 0 to 100. Rectify and try again."
+      "Marks is either unfilled or beyond the range of 0 to 100 for some subjects. Rectify and try again."
+    );
+  } else if (g == 1) {
+    document.querySelector("#GradePointResult h2").textContent = "";
+    document.querySelector("#GradePointResult h3").textContent = "";
+    alert(
+      "Credit points have not been selected for some subjects. Rectify and try again."
     );
   } else {
     document.querySelector(
