@@ -1,7 +1,7 @@
 /* reseting pre-applied css */
 
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css");
-body {
+.body2 {
   text-align: center;
   /* background: rgb(59,49,232); */
   /* background: linear-gradient(281deg, rgba(59,49,232,1) 0%, rgba(154,55,208,0.9953023445706407) 34%, rgba(0,212,255,1) 100%); */
@@ -156,3 +156,45 @@ footer {
     margin: 15px;
   }
 }
+
+
+.mode1{
+  background-color: #CC9544;
+  position: fixed;
+  top: 3%;
+  right: 0%;
+
+  border-radius: 10%;
+  border-style: solid;
+  border-width: 5px;
+  border-color: #04AA6D;
+}
+
+.mode2{
+  background-color:#CC9544;
+  position: fixed;
+  top:3%;
+  left:0%;
+
+  border-radius: 10%;
+  border-style: solid;
+  border-width: 5px;
+  border-color: #04AA6D;
+}
+
+.body1{
+  text-align: center;
+  font-family: "Bree Serif", serif;
+  background-attachment: fixed;
+  background-color: #1D2A35;
+  color:#04AA6D;
+}
+
+.a1{
+  color: #04AA6D;
+}
+
+.box1{
+  background-color: white;
+}
+

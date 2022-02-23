@@ -102,3 +102,37 @@ document.getElementById("submit").addEventListener("click", () => {
     ).textContent = `No Data filled`;
   }
 });
+
+
+//Code for dark mode
+document.querySelector(".mode1").addEventListener("click", function(){
+  document.querySelector("body").classList.remove("body2");
+  document.querySelector("body").classList.add("body1");
+ 
+  document.querySelectorAll("li a")[0].classList.add("a1");
+  document.querySelectorAll("li a")[1].classList.add("a1");
+  document.querySelectorAll("li a")[2].classList.add("a1");
+  document.querySelectorAll("li a")[3].classList.add("a1");
+  document.querySelectorAll("li a")[4].classList.add("a1");
+  document.querySelectorAll("li a")[5].classList.add("a1");
+  document.querySelectorAll("li a")[6].classList.add("a1");
+
+  document.querySelector("#box1").classList.add("box1");
+  
+})
+
+//Code for light mode
+document.querySelector(".mode2").addEventListener("click", function(){
+  document.querySelector("body").classList.remove("body1");
+  document.querySelector("body").classList.add("body2");
+
+  document.querySelectorAll("li a")[0].classList.remove("a1");
+  document.querySelectorAll("li a")[1].classList.remove("a1");
+  document.querySelectorAll("li a")[2].classList.remove("a1");
+  document.querySelectorAll("li a")[3].classList.remove("a1");
+  document.querySelectorAll("li a")[4].classList.remove("a1");
+  document.querySelectorAll("li a")[5].classList.remove("a1");
+  document.querySelectorAll("li a")[6].classList.remove("a1");
+
+  document.querySelector("#box1").classList.remove("box1");
+})
