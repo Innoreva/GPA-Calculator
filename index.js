@@ -103,7 +103,7 @@ document.getElementById("submit").addEventListener("click", () => {
   }
 });
 
-//Code for dark and light mode
+//Code for maintaining light or dark mode after refreshing
 
 if(localStorage.getItem('darkmode')===null){
   localStorage.setItem('darkmode',"false");
@@ -122,6 +122,8 @@ if(localStorage.getItem('darkmode')==="true"){
   document.querySelectorAll("li a")[6].classList.add("a1");
 
   document.querySelector("#box1").classList.add("box1");
+
+  document.querySelector(".mode1").src="brightness.png";
 }
 
 if(localStorage.getItem('darkmode')==="false"){
@@ -138,13 +140,17 @@ if(localStorage.getItem('darkmode')==="false"){
 
   document.querySelector("#box1").classList.remove("box1");
 
+  document.querySelector(".mode1").src="moon.png";
+
 }
 
 
-//Code for dark mode
+//Code for light and dark mode toggle
 
   
   document.querySelector(".mode1").addEventListener("click", function(){
+
+    if(localStorage.getItem('darkmode')==="false"){
   document.querySelector("body").classList.remove("body2");
   document.querySelector("body").classList.add("body1");
  
@@ -158,16 +164,11 @@ if(localStorage.getItem('darkmode')==="false"){
 
   document.querySelector("#box1").classList.add("box1");
 
-  localStorage.setItem('darkmode',"true");
-  
- })
+  document.querySelector(".mode1").src="brightness.png";
 
+  localStorage.setItem('darkmode',"true");}
 
-//Code for light mode
-
-
-
-  document.querySelector(".mode2").addEventListener("click", function(){
+  else if(localStorage.getItem('darkmode')==="true"){
   document.querySelector("body").classList.remove("body1");
   document.querySelector("body").classList.add("body2");
 
@@ -181,8 +182,13 @@ if(localStorage.getItem('darkmode')==="false"){
 
   document.querySelector("#box1").classList.remove("box1");
 
+  document.querySelector(".mode1").src="moon.png";
+
   localStorage.setItem('darkmode',"false");
+  }
+  
  })
+
 
 
 

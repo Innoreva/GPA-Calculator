@@ -159,28 +159,22 @@ footer {
 
 
 .mode1{
-  background-color: #CC9544;
+  /* background-color: #CC9544; */
   position: fixed;
   top: 3%;
-  right: 0%;
+  right: 2%;
+  
 
-  border-radius: 10%;
+  /* border-radius: 10%;
   border-style: solid;
   border-width: 5px;
-  border-color: #04AA6D;
+  border-color: #04AA6D; */
+
+  width:2vw;
+  height:5vh;
 }
 
-.mode2{
-  background-color:#CC9544;
-  position: fixed;
-  top:3%;
-  left:0%;
 
-  border-radius: 10%;
-  border-style: solid;
-  border-width: 5px;
-  border-color: #04AA6D;
-}
 
 .body1{
   text-align: center;
