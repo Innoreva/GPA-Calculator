@@ -160,9 +160,10 @@ footer {
 
 .mode1{
   /* background-color: #CC9544; */
-  position: fixed;
-  top: 3%;
-  right: 2%;
+  /* position: fixed; */
+  float: right;
+  /* top: 3%;
+  right: 2%; */
   
 
   /* border-radius: 10%;
