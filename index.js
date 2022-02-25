@@ -102,3 +102,93 @@ document.getElementById("submit").addEventListener("click", () => {
     ).textContent = `No Data filled`;
   }
 });
+
+//Code for maintaining light or dark mode after refreshing
+
+if(localStorage.getItem('darkmode')===null){
+  localStorage.setItem('darkmode',"false");
+}
+
+if(localStorage.getItem('darkmode')==="true"){
+  document.querySelector("body").classList.remove("body2");
+  document.querySelector("body").classList.add("body1");
+ 
+  document.querySelectorAll("li a")[0].classList.add("a1");
+  document.querySelectorAll("li a")[1].classList.add("a1");
+  document.querySelectorAll("li a")[2].classList.add("a1");
+  document.querySelectorAll("li a")[3].classList.add("a1");
+  document.querySelectorAll("li a")[4].classList.add("a1");
+  document.querySelectorAll("li a")[5].classList.add("a1");
+  document.querySelectorAll("li a")[6].classList.add("a1");
+
+  document.querySelector("#box1").classList.add("box1");
+
+  document.querySelector(".mode1").src="brightness.png";
+}
+
+if(localStorage.getItem('darkmode')==="false"){
+  document.querySelector("body").classList.remove("body1");
+  document.querySelector("body").classList.add("body2");
+
+  document.querySelectorAll("li a")[0].classList.remove("a1");
+  document.querySelectorAll("li a")[1].classList.remove("a1");
+  document.querySelectorAll("li a")[2].classList.remove("a1");
+  document.querySelectorAll("li a")[3].classList.remove("a1");
+  document.querySelectorAll("li a")[4].classList.remove("a1");
+  document.querySelectorAll("li a")[5].classList.remove("a1");
+  document.querySelectorAll("li a")[6].classList.remove("a1");
+
+  document.querySelector("#box1").classList.remove("box1");
+
+  document.querySelector(".mode1").src="moon.png";
+
+}
+
+
+//Code for light and dark mode toggle
+
+  
+  document.querySelector(".mode1").addEventListener("click", function(){
+
+    if(localStorage.getItem('darkmode')==="false"){
+  document.querySelector("body").classList.remove("body2");
+  document.querySelector("body").classList.add("body1");
+ 
+  document.querySelectorAll("li a")[0].classList.add("a1");
+  document.querySelectorAll("li a")[1].classList.add("a1");
+  document.querySelectorAll("li a")[2].classList.add("a1");
+  document.querySelectorAll("li a")[3].classList.add("a1");
+  document.querySelectorAll("li a")[4].classList.add("a1");
+  document.querySelectorAll("li a")[5].classList.add("a1");
+  document.querySelectorAll("li a")[6].classList.add("a1");
+
+  document.querySelector("#box1").classList.add("box1");
+
+  document.querySelector(".mode1").src="brightness.png";
+
+  localStorage.setItem('darkmode',"true");}
+
+  else if(localStorage.getItem('darkmode')==="true"){
+  document.querySelector("body").classList.remove("body1");
+  document.querySelector("body").classList.add("body2");
+
+  document.querySelectorAll("li a")[0].classList.remove("a1");
+  document.querySelectorAll("li a")[1].classList.remove("a1");
+  document.querySelectorAll("li a")[2].classList.remove("a1");
+  document.querySelectorAll("li a")[3].classList.remove("a1");
+  document.querySelectorAll("li a")[4].classList.remove("a1");
+  document.querySelectorAll("li a")[5].classList.remove("a1");
+  document.querySelectorAll("li a")[6].classList.remove("a1");
+
+  document.querySelector("#box1").classList.remove("box1");
+
+  document.querySelector(".mode1").src="moon.png";
+
+  localStorage.setItem('darkmode',"false");
+  }
+  
+ })
+
+
+
+
