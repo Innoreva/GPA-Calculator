@@ -13,3 +13,6 @@ This Project is assigned to sub-group C.
 3. Rahul Kumar Pandey 
 4. Vanshika Raj 
 5. Abuzar Eqbal 
+
+# FINAL PROJECT
+![alt text](/assets/front_page.jpg)
