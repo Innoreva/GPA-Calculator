@@ -25,12 +25,22 @@ This project enable the students to enter thier marks and credit point on the ba
 2. For the User Friendly Experience We have added A Dark/Light Theme toggler.
 3. The Theme is stored at localStorage that enable to rember what user set last time.
 
-
 ## Tech Stack Used
 1. HTML 
 2. CSS
 3. BootsTrap
 4. JavaScript
 
+## Some Sample GPA Report Produced
+
+These are the Report of the GPA genrated by using this application.
+
+![alt text](/assets/sample-report.png)
+
+## Some Common Error to be noted while Using this Application
+
+The WebPage will prompt an error if marks entered is not in range of 0 to 100 Or invalid Input. Insufficient data Provided error also occur if the required data are not given by the student 
+
+![alt text](/assets/some-errors.png)
 
 # Hope This will be helpful for every Student.
