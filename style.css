@@ -3,9 +3,6 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css");
 .body2 {
   text-align: center;
-  /* background: rgb(59,49,232); */
-  /* background: linear-gradient(281deg, rgba(59,49,232,1) 0%, rgba(154,55,208,0.9953023445706407) 34%, rgba(0,212,255,1) 100%); */
-  /* background-image: linear-gradient(to right bottom, #654bee, #007eff, #00a0ff, #00bbf2, #00d0dd, #15d3dd, #23d6dc, #2dd9dc, #00ccee, #00bdfc, #00aaff, #5f93fb); */
   background-image: linear-gradient(
     to left top,
     #654bee,
@@ -21,12 +18,36 @@
     #00aaff,
     #5f93fb
   );
-
-  /* background-image: -webkit-linear-gradient(60deg, #f3a0de 20%,rgb(235, 173, 103) 30%, #714add 60%); */
   font-family: "Bree Serif", serif;
   background-attachment: fixed;
 }
 
+/* For Dark Mode Toggler */
+
+.mode1 {
+  float: right;
+  margin-top: 3vh;
+  margin-right: 3.5vw;
+  width: 7vh;
+  height: 7vh;
+}
+
+.body1 {
+  text-align: center;
+  font-family: "Bree Serif", serif;
+  background-attachment: fixed;
+  background-color: #1d2a35;
+  color: #04aa6d;
+}
+
+.a1 {
+  color: #04aa6d;
+}
+
+.innoreva-text {
+  font-style: italic;
+  margin: 3px, 0, 3px, 0;
+}
 a {
   text-decoration: none;
   color: black;
@@ -83,8 +104,8 @@ label {
   top: 50px;
 }
 #stdForm {
-  margin: 80px;
-  border-radius: 10px;
+  margin: 60px;
+  /* border-radius: 10px; */
   padding: 10px;
   text-align: center;
 }
@@ -157,31 +178,3 @@ footer {
     margin: 15px;
   }
 }
-
-
-.mode1{
-  float: right;
-  margin-top: 3vh;
-  margin-right: 3.5vw;
-  width:7vh;
-  height:7vh;
-}
-
-
-
-.body1{
-  text-align: center;
-  font-family: "Bree Serif", serif;
-  background-attachment: fixed;
-  background-color: #1D2A35;
-  color:#04AA6D;
-}
-
-.a1{
-  color: #04AA6D;
-}
-
-.box1{
-  background-color: white;
-}
-

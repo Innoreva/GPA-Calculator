@@ -10,40 +10,39 @@ document.querySelector(".btn").addEventListener("click", () => {
 
 //Actions performed when "submit" button is pressed.
 document.getElementById("submit").addEventListener("click", () => {
- 
   //first name.
   let fname = document.getElementById("fname").value;
   fname = fname.charAt(0).toUpperCase() + fname.slice(1);
-  
+
   //last name.
   let lname = document.getElementById("lname").value;
   lname = lname.charAt(0).toUpperCase() + lname.slice(1);
-  
+
   //registration number.
   let reg = document.getElementById("reg").value.toUpperCase();
-  
+
   //semester
   let sem = document.getElementById("inputSemester").value;
-  
+
   //Stores the sum of marks*credit of each subject.
   let score = 0;
-  
+
   //A temporary variable to check if marks in any field is out of bound or not
-  let f=0;
-  
+  let f = 0;
+
   //A temporary variable to check if credit is selected or not
-  let g=0;
-  
+  let g = 0;
+
   //contains all the marks entered.
   let marksarray = document.getElementsByClassName("marks");
-  
+
   //contains all the credits entered.
   let creditsarray = document.getElementsByClassName("credit");
-  
+
   //stores the sum of credits entered.
   let totalCredits = 0;
-  
- for (let i = 0; i < marksarray.length; i++) {
+
+  for (let i = 0; i < marksarray.length; i++) {
     if (creditsarray[i].value != "Credit Point") {
       if (
         Number(marksarray[i].value) <= 100 &&
@@ -59,13 +58,13 @@ document.getElementById("submit").addEventListener("click", () => {
       g = 1;
     }
   }
-  
+
   //Stores final result.
   let result = 0;
   result = score / totalCredits ? (score / totalCredits).toFixed(2) : 0;
-  
+
   //final logic to print the output.
-  if (result != 0&&f==0&&g==0) {
+  if (result != 0 && f == 0 && g == 0) {
     let suffix = "th";
     if (sem == 1) suffix = "st";
     else if (sem == 2) suffix = "nd";
@@ -99,20 +98,20 @@ document.getElementById("submit").addEventListener("click", () => {
   } else {
     document.querySelector(
       "#GradePointResult h2"
-    ).textContent = `No Data filled`;
+    ).textContent = `⚠️ No Data filled`;
   }
 });
 
 //Code for maintaining light or dark mode after refreshing
 
-if(localStorage.getItem('darkmode')===null){
-  localStorage.setItem('darkmode',"false");
+if (localStorage.getItem("darkmode") === null) {
+  localStorage.setItem("darkmode", "false");
 }
 
-if(localStorage.getItem('darkmode')==="true"){
+if (localStorage.getItem("darkmode") === "true") {
   document.querySelector("body").classList.remove("body2");
   document.querySelector("body").classList.add("body1");
- 
+
   document.querySelectorAll("li a")[0].classList.add("a1");
   document.querySelectorAll("li a")[1].classList.add("a1");
   document.querySelectorAll("li a")[2].classList.add("a1");
@@ -123,10 +122,10 @@ if(localStorage.getItem('darkmode')==="true"){
 
   document.querySelector("#box1").classList.add("box1");
 
-  document.querySelector(".mode1").src="brightness.png";
+  document.querySelector(".mode1").src = "assets/brightness.png";
 }
 
-if(localStorage.getItem('darkmode')==="false"){
+if (localStorage.getItem("darkmode") === "false") {
   document.querySelector("body").classList.remove("body1");
   document.querySelector("body").classList.add("body2");
 
@@ -140,55 +139,45 @@ if(localStorage.getItem('darkmode')==="false"){
 
   document.querySelector("#box1").classList.remove("box1");
 
-  document.querySelector(".mode1").src="moon.png";
-
+  document.querySelector(".mode1").src = "assets/moon.png";
 }
-
 
 //Code for light and dark mode toggle
 
-  
-  document.querySelector(".mode1").addEventListener("click", function(){
+document.querySelector(".mode1").addEventListener("click", function () {
+  if (localStorage.getItem("darkmode") === "false") {
+    document.querySelector("body").classList.remove("body2");
+    document.querySelector("body").classList.add("body1");
 
-    if(localStorage.getItem('darkmode')==="false"){
-  document.querySelector("body").classList.remove("body2");
-  document.querySelector("body").classList.add("body1");
- 
-  document.querySelectorAll("li a")[0].classList.add("a1");
-  document.querySelectorAll("li a")[1].classList.add("a1");
-  document.querySelectorAll("li a")[2].classList.add("a1");
-  document.querySelectorAll("li a")[3].classList.add("a1");
-  document.querySelectorAll("li a")[4].classList.add("a1");
-  document.querySelectorAll("li a")[5].classList.add("a1");
-  document.querySelectorAll("li a")[6].classList.add("a1");
+    document.querySelectorAll("li a")[0].classList.add("a1");
+    document.querySelectorAll("li a")[1].classList.add("a1");
+    document.querySelectorAll("li a")[2].classList.add("a1");
+    document.querySelectorAll("li a")[3].classList.add("a1");
+    document.querySelectorAll("li a")[4].classList.add("a1");
+    document.querySelectorAll("li a")[5].classList.add("a1");
+    document.querySelectorAll("li a")[6].classList.add("a1");
 
-  document.querySelector("#box1").classList.add("box1");
+    document.querySelector("#box1").classList.add("box1");
 
-  document.querySelector(".mode1").src="brightness.png";
+    document.querySelector(".mode1").src = "assets/brightness.png";
 
-  localStorage.setItem('darkmode',"true");}
+    localStorage.setItem("darkmode", "true");
+  } else if (localStorage.getItem("darkmode") === "true") {
+    document.querySelector("body").classList.remove("body1");
+    document.querySelector("body").classList.add("body2");
 
-  else if(localStorage.getItem('darkmode')==="true"){
-  document.querySelector("body").classList.remove("body1");
-  document.querySelector("body").classList.add("body2");
+    document.querySelectorAll("li a")[0].classList.remove("a1");
+    document.querySelectorAll("li a")[1].classList.remove("a1");
+    document.querySelectorAll("li a")[2].classList.remove("a1");
+    document.querySelectorAll("li a")[3].classList.remove("a1");
+    document.querySelectorAll("li a")[4].classList.remove("a1");
+    document.querySelectorAll("li a")[5].classList.remove("a1");
+    document.querySelectorAll("li a")[6].classList.remove("a1");
 
-  document.querySelectorAll("li a")[0].classList.remove("a1");
-  document.querySelectorAll("li a")[1].classList.remove("a1");
-  document.querySelectorAll("li a")[2].classList.remove("a1");
-  document.querySelectorAll("li a")[3].classList.remove("a1");
-  document.querySelectorAll("li a")[4].classList.remove("a1");
-  document.querySelectorAll("li a")[5].classList.remove("a1");
-  document.querySelectorAll("li a")[6].classList.remove("a1");
+    document.querySelector("#box1").classList.remove("box1");
 
-  document.querySelector("#box1").classList.remove("box1");
+    document.querySelector(".mode1").src = "assets/moon.png";
 
-  document.querySelector(".mode1").src="moon.png";
-
-  localStorage.setItem('darkmode',"false");
+    localStorage.setItem("darkmode", "false");
   }
-  
- })
-
-
-
-
+});
