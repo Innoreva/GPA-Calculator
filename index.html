@@ -26,86 +26,66 @@
         href="https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=Baloo+Bhaijaan+2:wght@400;500&family=Bree+Serif&family=Lobster&family=Moon+Dance&display=swap"
         rel="stylesheet">
 
-        <!-- fevicon -->
-        <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-<link rel="manifest" href="favicon-gpa/site.webmanifest">
-<link rel="mask-icon" href="favicon-gpa/safari-pinned-tab.svg" color="#5bbad5">
-<meta name="msapplication-TileColor" content="#da532c">
-<meta name="theme-color" content="#ffffff">
+    <!-- fevicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicon-gpa/site.webmanifest">
+    <link rel="mask-icon" href="assets/favicon-gpa/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
 
 
 </head>
 
 <body class="body2">
     <div>
-        <img src="moon.png" class="mode1">
+        <img src="assets/moon.png" class="mode1">
     </div>
-    
 
     <div class="firstpage-container">
         <div class="f1" id="name">
             <h1 id="collegeName"> Innovative Institute of Web Technologies(IIWT)</h1>
         </div>
-        
+
         <div id="briefing">
-        <div class="f1" id="tag">
-            <p class="tagline center">A great starting point towards a better future</p>
-            <h2 class="tagline">Presenting to you a Grade Point Average Calculator.</h2>
-            <p class="tagline center"> This GPA calculator computes GPA and generates your SGPA on course credits and
-                the marks enter by the student.</p>
-        </div>
-        <div class="f1" id="std-button">      <!--check below line once more-->
-            <button class="btn btn-primary but"><!--<a class="but" href="#stdForm">-->Enter Student Details<!--</a>-->
-            </button>
-        </div>
+            <div class="f1" id="tag">
+                <p class="tagline center">A great starting point towards a better future</p>
+                <h2 class="tagline">Presenting to you a Grade Point Average Calculator.</h2>
+                <p class="tagline center"> This GPA calculator computes GPA and generates your SGPA on course credits
+                    and
+                    the marks enter by the student.</p>
+            </div>
+            <div class="f1" id="std-button">
+                <!--check below line once more-->
+                <button class="btn btn-primary but">
+                    <!--<a class="but" href="#stdForm">-->Enter Student Details
+                    <!--</a>-->
+                </button>
+            </div>
         </div>
     </div>
     <div class="content my-5">
-    <section id="stdForm">
-        <h2>Enter Your Details</h1>
-            <form class="form" action="#">
+        <section id="stdForm">
+            <h2>Enter Your Details</h1>
+                <form class="form" action="#">
 
-                <div class="row g-3">
-                    <div class="col-md-6 col-sm-12">
-                        <input type="text" class="form-control" placeholder="First Name" aria-label="First name"
-                            autocomplete="nofill" required id="fname">
-                    </div>
-                    <div class="col-md-6 col-sm-12">
-                        <input type="text" class="form-control" placeholder="Last Name" aria-label="Last name"
-                            autocomplete="nofill" required id="lname">
-                    </div>
-                    <div class="col-md-6 col-sm-12">
-                        <input type="text" class="form-control" placeholder="Registration Number"
-                            aria-label="Registration Number" autocomplete="nofill" required id="reg">
-                    </div>
-                    <div class="col-md-6 col-sm-12">
-                        <select id="inputSemester" class="form-select"  required>
-                            <option selected>Choose Semester</option>
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                            <option>5</option>
-                            <option>6</option>
-                            <option>7</option>
-                            <option>8</option>
-                        </select>
-                    </div>
-                    <h2>Subject Details</h2>
-                    <!-- Subject Details -->
                     <div class="row g-3">
                         <div class="col-md-6 col-sm-12">
-                            <input type="text" class="form-control" placeholder="Subject Name" required>
+                            <input type="text" class="form-control" placeholder="First Name" aria-label="First name"
+                                autocomplete="nofill" required id="fname">
                         </div>
-                        <div class="col-md-3 col-sm-6">
-                            <input type="number" class="form-control marks" placeholder="Marks Obtained" required min="1"
-                                max="100">
+                        <div class="col-md-6 col-sm-12">
+                            <input type="text" class="form-control" placeholder="Last Name" aria-label="Last name"
+                                autocomplete="nofill" required id="lname">
                         </div>
-                        <div class="col-md-3 col-sm-6">
-                            <select id="inputCreditPoint" class="form-select credit" required>
-                                <option selected>Credit Point </option>
+                        <div class="col-md-6 col-sm-12">
+                            <input type="text" class="form-control" placeholder="Registration Number"
+                                aria-label="Registration Number" autocomplete="nofill" required id="reg">
+                        </div>
+                        <div class="col-md-6 col-sm-12">
+                            <select id="inputSemester" class="form-select" required>
+                                <option selected>Choose Semester</option>
                                 <option>1</option>
                                 <option>2</option>
                                 <option>3</option>
@@ -114,247 +94,271 @@
                                 <option>6</option>
                                 <option>7</option>
                                 <option>8</option>
-                                <option>9</option>
-                                <option>10</option>
                             </select>
                         </div>
-                    </div>
-                    <div class="row g-3">
-                        <div class="col-md-6 col-sm-12">
-                            <input type="text" class="form-control" placeholder="Subject Name" required>
+                        <h2>Subject Details</h2>
+                        <!-- Subject Details -->
+                        <div class="row g-3">
+                            <div class="col-md-6 col-sm-12">
+                                <input type="text" class="form-control" placeholder="Subject Name" required>
+                            </div>
+                            <div class="col-md-3 col-sm-6">
+                                <input type="number" class="form-control marks" placeholder="Marks Obtained" required
+                                    min="1" max="100">
+                            </div>
+                            <div class="col-md-3 col-sm-6">
+                                <select id="inputCreditPoint" class="form-select credit" required>
+                                    <option selected>Credit Point </option>
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                    <option>6</option>
+                                    <option>7</option>
+                                    <option>8</option>
+                                    <option>9</option>
+                                    <option>10</option>
+                                </select>
+                            </div>
                         </div>
-                        <div class="col-md-3 col-sm-6">
-                            <input type="number" class="form-control marks" placeholder="Marks Obtained" required min="1"
-                                max="100">
+                        <div class="row g-3">
+                            <div class="col-md-6 col-sm-12">
+                                <input type="text" class="form-control" placeholder="Subject Name" required>
+                            </div>
+                            <div class="col-md-3 col-sm-6">
+                                <input type="number" class="form-control marks" placeholder="Marks Obtained" required
+                                    min="1" max="100">
+                            </div>
+                            <div class="col-md-3 col-sm-6">
+                                <select id="inputCreditPoint" class="form-select credit" required>
+                                    <option selected>Credit Point </option>
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                    <option>6</option>
+                                    <option>7</option>
+                                    <option>8</option>
+                                    <option>9</option>
+                                    <option>10</option>
+                                </select>
+                            </div>
                         </div>
-                        <div class="col-md-3 col-sm-6">
-                            <select id="inputCreditPoint" class="form-select credit" required>
-                                <option selected>Credit Point </option>
-                                <option>1</option>
-                                <option>2</option>
-                                <option>3</option>
-                                <option>4</option>
-                                <option>5</option>
-                                <option>6</option>
-                                <option>7</option>
-                                <option>8</option>
-                                <option>9</option>
-                                <option>10</option>
-                            </select>
+                        <div class="row g-3">
+                            <div class="col-md-6 col-sm-12">
+                                <input type="text" class="form-control" placeholder="Subject Name" required>
+                            </div>
+                            <div class="col-md-3 col-sm-6">
+                                <input type="number" class="form-control marks" placeholder="Marks Obtained" required
+                                    min="1" max="100">
+                            </div>
+                            <div class="col-md-3 col-sm-6">
+                                <select id="inputCreditPoint" class="form-select credit" required>
+                                    <option selected>Credit Point </option>
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                    <option>6</option>
+                                    <option>7</option>
+                                    <option>8</option>
+                                    <option>9</option>
+                                    <option>10</option>
+                                </select>
+                            </div>
                         </div>
-                    </div>
-                    <div class="row g-3">
-                        <div class="col-md-6 col-sm-12">
-                            <input type="text" class="form-control" placeholder="Subject Name" required>
+                        <div class="row g-3">
+                            <div class="col-md-6 col-sm-12">
+                                <input type="text " class="form-control" placeholder="Subject Name" required>
+                            </div>
+                            <div class="col-md-3 col-sm-6">
+                                <input type="number" class="form-control marks" placeholder="Marks Obtained" required
+                                    min="1" max="100">
+                            </div>
+                            <div class="col-md-3 col-sm-6">
+                                <select id="inputCreditPoint" class="form-select credit" required>
+                                    <option selected>Credit Point </option>
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                    <option>6</option>
+                                    <option>7</option>
+                                    <option>8</option>
+                                    <option>9</option>
+                                    <option>10</option>
+                                </select>
+                            </div>
                         </div>
-                        <div class="col-md-3 col-sm-6">
-                            <input type="number" class="form-control marks" placeholder="Marks Obtained" required min="1"
-                                max="100">
+                        <div class="row g-3">
+                            <div class="col-md-6 col-sm-12">
+                                <input type="text " class="form-control" placeholder="Subject Name" required>
+                            </div>
+                            <div class="col-md-3 col-sm-6">
+                                <input type="number" class="form-control marks" placeholder="Marks Obtained" required
+                                    min="1" max="100">
+                            </div>
+                            <div class="col-md-3 col-sm-6">
+                                <select id="inputCreditPoint" class="form-select credit" required>
+                                    <option selected>Credit Point </option>
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                    <option>6</option>
+                                    <option>7</option>
+                                    <option>8</option>
+                                    <option>9</option>
+                                    <option>10</option>
+                                </select>
+                            </div>
                         </div>
-                        <div class="col-md-3 col-sm-6">
-                            <select id="inputCreditPoint" class="form-select credit" required>
-                                <option selected>Credit Point </option>
-                                <option>1</option>
-                                <option>2</option>
-                                <option>3</option>
-                                <option>4</option>
-                                <option>5</option>
-                                <option>6</option>
-                                <option>7</option>
-                                <option>8</option>
-                                <option>9</option>
-                                <option>10</option>
-                            </select>
+                        <div class="row g-3">
+                            <div class="col-md-6 col-sm-12">
+                                <input type="text" class="form-control" placeholder="Subject Name" required>
+                            </div>
+                            <div class="col-md-3 col-sm-6">
+                                <input type="number" class="form-control marks" placeholder="Marks Obtained" required
+                                    min="1" max="100">
+                            </div>
+                            <div class="col-md-3 col-sm-6">
+                                <select id="inputCreditPoint" class="form-select credit" required>
+                                    <option selected>Credit Point </option>
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                    <option>6</option>
+                                    <option>7</option>
+                                    <option>8</option>
+                                    <option>9</option>
+                                    <option>10</option>
+                                </select>
+                            </div>
                         </div>
-                    </div>
-                    <div class="row g-3">
-                        <div class="col-md-6 col-sm-12">
-                            <input type="text " class="form-control" placeholder="Subject Name" required>
+                        <div class="row g-3">
+                            <div class="col-md-6 col-sm-12">
+                                <input type="text" class="form-control" placeholder="Subject Name" required>
+                            </div>
+                            <div class="col-md-3 col-sm-6">
+                                <input type="number" class="form-control marks" placeholder="Marks Obtained" required
+                                    min="1" max="100">
+                            </div>
+                            <div class="col-md-3 col-sm-6">
+                                <select id="inputCreditPoint" class="form-select credit" required>
+                                    <option selected>Credit Point </option>
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                    <option>6</option>
+                                    <option>7</option>
+                                    <option>8</option>
+                                    <option>9</option>
+                                    <option>10</option>
+                                </select>
+                            </div>
                         </div>
-                        <div class="col-md-3 col-sm-6">
-                            <input type="number" class="form-control marks" placeholder="Marks Obtained" required min="1"
-                                max="100">
+                        <div class="row g-3">
+                            <div class="col-md-6 col-sm-12">
+                                <input type="text" class="form-control" placeholder="Subject Name" required>
+                            </div>
+                            <div class="col-md-3 col-sm-6">
+                                <input type="number" class="form-control marks" placeholder="Marks Obtained" required
+                                    min="1" max="100">
+                            </div>
+                            <div class="col-md-3 col-sm-6">
+                                <select id="inputCreditPoint" class="form-select credit" required>
+                                    <option selected>Credit Point </option>
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                    <option>6</option>
+                                    <option>7</option>
+                                    <option>8</option>
+                                    <option>9</option>
+                                    <option>10</option>
+                                </select>
+                            </div>
                         </div>
-                        <div class="col-md-3 col-sm-6">
-                            <select id="inputCreditPoint" class="form-select credit" required>
-                                <option selected>Credit Point </option>
-                                <option>1</option>
-                                <option>2</option>
-                                <option>3</option>
-                                <option>4</option>
-                                <option>5</option>
-                                <option>6</option>
-                                <option>7</option>
-                                <option>8</option>
-                                <option>9</option>
-                                <option>10</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="row g-3">
-                        <div class="col-md-6 col-sm-12">
-                            <input type="text " class="form-control" placeholder="Subject Name" required>
-                        </div>
-                        <div class="col-md-3 col-sm-6">
-                            <input type="number" class="form-control marks" placeholder="Marks Obtained" required min="1"
-                                max="100">
-                        </div>
-                        <div class="col-md-3 col-sm-6">
-                            <select id="inputCreditPoint" class="form-select credit" required>
-                                <option selected>Credit Point </option>
-                                <option>1</option>
-                                <option>2</option>
-                                <option>3</option>
-                                <option>4</option>
-                                <option>5</option>
-                                <option>6</option>
-                                <option>7</option>
-                                <option>8</option>
-                                <option>9</option>
-                                <option>10</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="row g-3">
-                        <div class="col-md-6 col-sm-12">
-                            <input type="text" class="form-control" placeholder="Subject Name" required>
-                        </div>
-                        <div class="col-md-3 col-sm-6">
-                            <input type="number" class="form-control marks" placeholder="Marks Obtained" required min="1"
-                                max="100">
-                        </div>
-                        <div class="col-md-3 col-sm-6">
-                            <select id="inputCreditPoint" class="form-select credit" required>
-                                <option selected>Credit Point </option>
-                                <option>1</option>
-                                <option>2</option>
-                                <option>3</option>
-                                <option>4</option>
-                                <option>5</option>
-                                <option>6</option>
-                                <option>7</option>
-                                <option>8</option>
-                                <option>9</option>
-                                <option>10</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="row g-3">
-                        <div class="col-md-6 col-sm-12">
-                            <input type="text" class="form-control" placeholder="Subject Name" required>
-                        </div>
-                        <div class="col-md-3 col-sm-6">
-                            <input type="number" class="form-control marks" placeholder="Marks Obtained" required min="1"
-                                max="100">
-                        </div>
-                        <div class="col-md-3 col-sm-6">
-                            <select id="inputCreditPoint" class="form-select credit" required>
-                                <option selected>Credit Point </option>
-                                <option>1</option>
-                                <option>2</option>
-                                <option>3</option>
-                                <option>4</option>
-                                <option>5</option>
-                                <option>6</option>
-                                <option>7</option>
-                                <option>8</option>
-                                <option>9</option>
-                                <option>10</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="row g-3">
-                        <div class="col-md-6 col-sm-12">
-                            <input type="text" class="form-control" placeholder="Subject Name" required>
-                        </div>
-                        <div class="col-md-3 col-sm-6">
-                            <input type="number" class="form-control marks" placeholder="Marks Obtained" required min="1"
-                                max="100">
-                        </div>
-                        <div class="col-md-3 col-sm-6">
-                            <select id="inputCreditPoint" class="form-select credit" required>
-                                <option selected>Credit Point </option>
-                                <option>1</option>
-                                <option>2</option>
-                                <option>3</option>
-                                <option>4</option>
-                                <option>5</option>
-                                <option>6</option>
-                                <option>7</option>
-                                <option>8</option>
-                                <option>9</option>
-                                <option>10</option>
-                            </select>
-                        </div>
-                    </div>
 
+                    </div>
+                    <br>
+                    <div class="item">
+                        <button type="submit" class="btn btn-primary" id="submit"><a class="but"
+                                href="#GradePointResult">Submit</a></button>
+                    </div>
+                </form>
+        </section>
+        <section id="GradePointResult">
+            <br>
+            <div style="height: auto;">
+                <!-- Add JavaScript and Alter this part innerHTML -->
+                <div>
+                    <h2></h2>
                 </div>
-                <div class="item ">
-                    <button type="submit" class="btn but btn-primary" id="submit"><a class="but"
-                            href="#GradePointResult">Submit</a></button>
-
+                <div class="my-5">
+                    <h3></h3>
                 </div>
-            </form>
-    </section>
-    <section id="GradePointResult">
-        <div style="height: auto;">
-            <!-- Add JavaScript and Alter this part innerHTML -->
+            </div>
+            <br>
+        </section>
+
+        <footer>
+
             <div>
-            <h2></h2>
+                <h2>Thank you for using this Platform, Have a Nice Career Ahead.</h2>
             </div>
-            <div class="my-5">
-            <h3></h3>
-            </div>
-        </di>
-        <br><br><br>
-    </section>
+            <hr>
+            <div class="row">
+                <div class="col-md-6 col-lg-4 col-xs-12">
 
-    <footer>
+                    <div class="box">
+                        <h3 class="box-heading">Contributors</h3>
+                        <ul class="box-content list-unstyled">
+                            <li><a href="https://github.com/iamakhileshmishra">Akhilesh Kumar Mishra</a></li>
+                            <li><a href="https://github.com/Rah-byte301">Rahul Ganguly</a></li>
+                            <li><a href="https://github.com/Rahul-108">Rahul Pandey</a></li>
+                            <li><a href="https://github.com/vanshikaraj48">Vanshika Raj</a></li>
+                            <li><a href="https://github.com/theAbuzar26">Abuzar Eqbal</a></li>
+                        </ul>
+                    </div>
 
-        <div>
-            <h2>Thank you for using this Platform, Have a Nice Career Ahead.</h2>
-        </div>
-        <hr>
-        <div class="row">
-            <div class="col-md-6 col-lg-4 col-xs-12">
-
-                <div class="box">
-                    <h3 class="box-heading">Contributors</h3>
-                    <ul class="box-content list-unstyled">
-                        <li><a href="https://github.com/iamakhileshmishra">Akhilesh Kumar Mishra</a></li>
-                        <li ><a href="https://github.com/Rah-byte301">Rahul Ganguly</a></li>
-                        <li><a href="https://github.com/Rahul-108">Rahul Pandey</a></li>
-                        <li><a href="https://github.com/vanshikaraj48">Vanshika Raj</a></li>
-                        <li><a href="https://github.com/theAbuzar26">Abuzar Eqbal</a></li>
-                    </ul>
                 </div>
+                <div class="col-md-6 col-lg-4 col-xs-12">
 
-            </div>
-            <div class="col-md-6 col-lg-4 col-xs-12">
-
-                <div class="box">
-                    <h3 class="box-heading">Mentors</h3>
-                    <ul class="box-content list-unstyled">
-                        <li><a href="https://github.com/AKC068">Ayush Kumar Chaudhary</a></li>
-                        <li><a href="#">Anmol Kesharwani</a></li>
-                    </ul>
+                    <div class="box">
+                        <h3 class="box-heading">Mentors</h3>
+                        <ul class="box-content list-unstyled">
+                            <li><a href="https://github.com/AKC068">Ayush Kumar Chaudhary</a></li>
+                            <li><a href="#">Anmol Kesharwani</a></li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-            <div class="col-md-12 col-lg-4 col-xs-12">
-                <div class="box inn" id="box1">
-                    <img src="./innoreva_logo-removebg-preview.png" height="150px" width="150px">
-                    <div class="social">
-                        <a href="https://www.facebook.com/teaminnoreva"><i class="bi bi-facebook social"></i></a>
-                        <a href="https://www.linkedin.com/company/innoreva-nit-jsr/mycompany/"><i
-                                class="bi bi-linkedin social "></i></a>
-                        <a class="git" href="https://github.com/Innoreva"><i class="bi bi-github social"></i></a>
+                <div class="col-md-12 col-lg-4 col-xs-12">
+                    <div class="box inn" id="box1">
+                        <img src="assets/innoreva_logo-removebg-preview.png" height="120px" width="150px">
+                        <h5 class="innoreva-text">INNOREVA</h5>
+                        <div class="social">
+                            <a href="https://www.facebook.com/teaminnoreva"><i class="bi bi-facebook social"></i></a>
+                            <a href="https://www.linkedin.com/company/innoreva-nit-jsr/mycompany/"><i
+                                    class="bi bi-linkedin social "></i></a>
+                            <a class="git" href="https://github.com/Innoreva"><i class="bi bi-github social"></i></a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </footer>
+        </footer>
     </div>
-    
     <script src="index.js"></script>
 </body>
 
